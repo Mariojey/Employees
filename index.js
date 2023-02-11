@@ -4,6 +4,9 @@ const cors = require("cors");
 const connection = require('./config/db');
 const bodyParser = require("body-parser");
 
+//routes
+const employeeRoute = require('./routes/employeeRoute')
+
 const app = express();
 const PORT = process.env.PORT || 8888;
 
@@ -24,6 +27,8 @@ app.use((err, req, res, next) => {
         message: `Ups! Something went wrong 🥺`
     });
 });
+
+app.use('/api/employee', employeeRoute)
 
 app.listen(PORT, () => {
     console.log(`======================================`);

@@ -23,6 +23,16 @@ const EmployeeSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
         unique: [true, 'Email is already saved in our database']
+    },
+    salary: {
+        type: Number,
+
+    },
+    phone: {
+        type: String,
+        required: [true, 'User phone number is required'],
+        min: [9, "Too Few. Not valid number"],
+        max: [9, "Too long. Not valid number"],
     }
 })
 

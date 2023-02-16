@@ -12,3 +12,9 @@ exports.createEmployee = async(req, res, next) => {
         next(error)
     }
 }
+
+exports.getAllEmployee = (req, res) => {
+    Employee.find((err, employees) => {
+        res.json(employees)
+    });
+};

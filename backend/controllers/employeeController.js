@@ -33,3 +33,15 @@ exports.getEmployeeById = (req, res) => {
         }
     })
 }
+
+// Update Employee by ID
+exports.updateEmployeeById = (req, res) => {
+    let id = req.params.id
+    Employee.findByIdAndUpdate(id, req.body)
+        .then(() => {
+            res.status(200).send('Employee updated');
+        })
+        .catch((err) => {
+            res.status(422).send('Crud update fail');
+        })
+}

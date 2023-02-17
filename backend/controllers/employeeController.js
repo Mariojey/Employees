@@ -25,11 +25,11 @@ exports.getAllEmployee = (req, res) => {
 //Show employee with concret id
 exports.getEmployeeById = (req, res) => {
     let id = req.params.id
-    Employee.findById((id, (err, employee) => {
+    Employee.findById(id, (err, employee) => {
         if (!employee) {
             res.status(404).send('Result not found');
         } else {
             res.json(employee)
         }
-    }))
+    })
 }

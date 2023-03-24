@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
 import { useState, useEffect } from "react";
+import './ListView.css'
 
 export default function ListView(){
 
@@ -15,7 +16,7 @@ export default function ListView(){
         department: ""
     };
 
-    const [employees, setEmployees] = useState(initState)
+    const [employees, setEmployees] = useState([])
 
     useEffect(() => {
         function fetchData(){
@@ -25,14 +26,14 @@ export default function ListView(){
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 }
-            }).then(res => res.json)
+            }).then(res => res.json())
             .then(data => {
                 setEmployees(data)
             })
         }
         fetchData()
     },[])
-
+    console.log(employees);
     return(
         <>
         <Navbar />

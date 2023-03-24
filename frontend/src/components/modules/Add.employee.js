@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import post from "axios";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export default function Add(){
@@ -21,10 +21,21 @@ export default function Add(){
     function handleSubmit(event) {
         event.preventDefault();
 
-        async function postEmployee(){
+        function postEmployee(){
             try{
-                const response = await post('/api/employee', employee);
-                navigate(`/employee/${response.data._id}`);
+                fetch(`http://127.0.0.1:8888/api/employee`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(employee)
+                }).then(res => res.json())
+                .then(res => {
+                    
+                    navigate(`/employee/${res._id}`);
+                })
+                
             }catch(error){
                 console.log(`Ups! Something went wrong 🥺`, error);
             }
@@ -44,7 +55,7 @@ export default function Add(){
 
         <div className="addEmployeeContainer">
             <h1>Add Employee</h1>
-            <form onSubmit={handleChange}>
+            <form onSubmit={handleSubmit}>
                 <input type="text"
                         name="firstName"
                         required
@@ -95,7 +106,7 @@ export default function Add(){
                         className="formInput"
                         placeholder="Write department here..." />
                 <div className="addEmployeeBtns">
-                    <button type="submit" onClick={handleChange} className="addBtn">Add</button>
+                    <button type="submit" onClick={handleSubmit} className="addBtn">Add</button>
                     <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
                 </div>
             </form>

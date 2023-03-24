@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router} from 'react-router-dom';
+
+import { createMemoryHistory } from 'history';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const history = createMemoryHistory();
+
 root.render(
   <React.StrictMode>
+    <Router location={history.location} navigator={history}>
     <App />
+    </Router>
+    
   </React.StrictMode>
 );
 

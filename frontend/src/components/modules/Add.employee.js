@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../elements/Navbar";
+import Footer from "../elements/Footer";
 
 export default function Add(){
 
@@ -52,7 +53,8 @@ export default function Add(){
     }
 
     return(
-
+        <>
+        <Navbar />
         <div className="addEmployeeContainer">
             <h1>Add Employee</h1>
             <form onSubmit={handleSubmit}>
@@ -111,5 +113,7 @@ export default function Add(){
                 </div>
             </form>
         </div>
+        <Footer />
+        </>
     )
 }

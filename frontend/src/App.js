@@ -13,6 +13,7 @@ import Footer from './components/elements/Footer';
 import Home from './components/pages/Home';
 import Add from './components/modules/Add.employee';
 import ListView from './components/pages/ListView';
+import Card from './components/pages/CardEmployee';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/api" />
           <Route path="/employees" element={<ListView/>}/>
           <Route path="/employees/new" element={<Add />} />
-          <Route path="/employee/:_id" />
+          <Route path="/employee/:_id" element={<Card />}/>
           <Route path="/employee/:_id/edit" />
         </Routes>
 

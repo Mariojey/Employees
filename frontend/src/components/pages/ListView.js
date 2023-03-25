@@ -2,9 +2,13 @@ import React from "react";
 import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './ListView.css'
+import { Link } from "react-router-dom";
 
 export default function ListView(){
+
+
 
     const initState = {
         firstName: "",
@@ -33,7 +37,8 @@ export default function ListView(){
         }
         fetchData()
     },[])
-    console.log(employees);
+
+    
     return(
         <>
         <Navbar />
@@ -53,12 +58,12 @@ export default function ListView(){
                     {employees && employees.map(item => {
                         return(
                             <tr key={item._id}>
-                                <td>{item.firstName}</td>
-                                <td>{item.lastName}</td>
-                                <td>{item.email}</td>
-                                <td>{item.phone}</td>
-                                <td>{item.salary}</td>
-                                <td>{item.title}</td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.firstName}</Link></td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.lastName}</Link></td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.email}</Link></td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.phone}</Link></td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.salary}</Link></td>
+                                <td><Link to={`/employee/${item._id}`} className="tableLink">{item.title}</Link></td>
                             </tr>
                         )
                     })}

@@ -9,8 +9,12 @@
     --white: #fff;
 }
 
+.listView {
+    max-width: 100vw;
+}
+
 .table {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: var(--black);
     color: var(--white);
@@ -18,4 +22,9 @@
 
 .table tr {
     border-bottom: 1px solid var(--white);
+}
+
+.tableLink {
+    text-decoration: none;
+    color: var(--white);
 }

@@ -6,6 +6,8 @@ import Footer from "../elements/Footer";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Card(){
 
     const initState = {
@@ -17,6 +19,8 @@ export default function Card(){
         phone: "",
         department: ""
     };
+
+    const navigation = useNavigate()
 
     const {_id} = useParams()
 
@@ -35,6 +39,9 @@ export default function Card(){
         })
     },[])
 
+    function changeURL() {
+        navigation(`/employee/${_id}/edit`)
+    }
 
     return(
         <>
@@ -47,6 +54,8 @@ export default function Card(){
                 <p>{data.title}</p>
                 <p>{data.department}</p>               
             </div>
+            <button type="button" onClick={changeURL}>Edit</button>
+
             <Footer />
         </>
     )

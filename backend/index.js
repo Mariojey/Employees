@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 app.use((err, req, res, next) => {
-    console.log(err.stack);
+    consol.log(err.stack);
     console.log(err.name);
     console.log(err.code);
 

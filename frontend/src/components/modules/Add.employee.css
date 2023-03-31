@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --reactDefaultColor: #282c34;
+    --beige: beige;
+    --blue: dodgerblue;
+}
+
+.addBackground {
+    background-color: var(--reactDefaultColor);
+    width: 100%;
+    min-height: 80vh;
+}
+
+.addEmployeeContainer {
+    background-color: var(--black);
+    color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.addEmployeeContainer h1 {
+    width: 40vw;
+}
+
+.addEmployeeContainerForm {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 40px 20px;
+}
+
+.formInput {
+    width: 40vw;
+    background-color: var(--reactDefaultColor);
+    color: var(--white);
+    border-radius: 12px;
+    border: 3px solid var(--beige);
+    margin: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
+}
+
+.formInput:empty {
+    border: 3px solid var(--blue);
+}
+
+.formInput:not([value=""]) {
+    width: 40vw;
+    background-color: var(--reactDefaultColor);
+    color: var(--white);
+    border-radius: 12px;
+    border: 3px solid var(--beige);
+    margin: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
+}
+
+.addEmployeeBtns {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addBtn {
+    margin-left: 10vw;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 22px;
+    padding: 10px 18px 10px 18px;
+    border: none;
+}
+
+.cancelBtn {
+    margin-right: 10vw;
+    background-color: var(--reactDefaultColor);
+    color: var(--white);
+    border-radius: 22px;
+    padding: 10px 18px 10px 18px;
+    border: none;
+}

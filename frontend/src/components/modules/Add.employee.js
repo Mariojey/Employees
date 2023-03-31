@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
 
+import './Add.employee.css'
+
 export default function Add(){
 
     const initState = {
@@ -55,9 +57,10 @@ export default function Add(){
     return(
         <>
         <Navbar />
+        <div className="addBackground">
         <div className="addEmployeeContainer">
             <h1>Add Employee</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
                 <input type="text"
                         name="firstName"
                         required
@@ -112,6 +115,7 @@ export default function Add(){
                     <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
                 </div>
             </form>
+        </div>
         </div>
         <Footer />
         </>

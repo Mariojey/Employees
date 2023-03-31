@@ -14,7 +14,7 @@ import Home from './components/pages/Home';
 import Add from './components/modules/Add.employee';
 import ListView from './components/pages/ListView';
 import Card from './components/pages/CardEmployee';
-import EditCard from './components/pages/EditEmployee';
+import EditCard from './components/modules/EditEmployee';
 
 function App() {
   return (

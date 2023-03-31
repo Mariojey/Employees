@@ -4,6 +4,8 @@ import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
 import { useNavigate, useParams } from "react-router-dom";
 
+import './Add.employee.css'
+
 export default function EditCard(){
     
     const initState = {

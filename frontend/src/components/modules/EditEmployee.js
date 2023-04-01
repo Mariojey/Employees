@@ -69,7 +69,7 @@ export default function EditCard(){
     }
 
     function handleCancel() {
-        navigate(`/employees/${_id}`);
+        navigate(`/employee/${_id}/`);
     }
 
 
@@ -79,7 +79,7 @@ export default function EditCard(){
                     <Navbar />
         <div className="addEmployeeContainer">
             <h1>Edit Employee</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
                 <input type="text"
                         name="firstName"
                         required

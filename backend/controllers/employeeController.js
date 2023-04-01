@@ -34,6 +34,17 @@ exports.getEmployeeById = (req, res) => {
     })
 }
 
+exports.getEmployeeByName = (req, res) => {
+    let name = req.params.name
+    Employee.find({ "firstName": name }, (err, employee) => {
+        if (!employee) {
+            res.status(404).send('Result not found');
+        } else {
+            res.json(employee)
+        }
+    })
+}
+
 // Update Employee by ID
 exports.updateEmployeeById = (req, res) => {
     let id = req.params.id

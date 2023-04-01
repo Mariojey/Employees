@@ -7,5 +7,5 @@ router.post('/', employeeController.createEmployee);
 router.get('/', employeeController.getAllEmployee);
 router.get('/:id', employeeController.getEmployeeById);
 router.patch('/:id', employeeController.updateEmployeeById);
-
+router.get('/name/:name', employeeController.getEmployeeByName)
 module.exports = router;

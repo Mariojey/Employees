@@ -45,7 +45,7 @@ export default function ListView(){
     }
 
     function loadOptions(input, callback) {
-        fetch(`http://127.0.0.1/api/employee/name/${input}`, {
+        fetch(`http://127.0.0.1:8888/api/employee/?name=${input}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',

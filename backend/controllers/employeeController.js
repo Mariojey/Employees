@@ -22,6 +22,30 @@ exports.getAllEmployee = (req, res) => {
     });
 };
 
+exports.getEmployee = async(req, res) => {
+    try {
+        const page = parseInt(req.query.page) - 1 || 0;
+        const limit = parseInt(req.query.limit) || 5;
+        const search = req.query.search || "";
+        let department = req.query.department || "All";
+        let title = req.query.title || "All";
+
+        const departmentOptions = Employee.find('department');
+        const titleOptins = Employee.find('title');
+        department === "All" ?
+            (department = [...departmentOptions]) :
+            (department = req.query.department.split(","));
+        title === "All" ?
+            (title = [...titleOptins]) :
+            (title = req.query.title.split(","))
+
+        const employees = await Employee.find({ name: { $regex: search, $options: "i" } })
+        res.status(200).json(employees)
+    } catch (error) {
+        res.status(500).send(error)
+    }
+}
+
 //Show employee with concret id
 exports.getEmployeeById = (req, res) => {
     let id = req.params.id
@@ -35,8 +59,8 @@ exports.getEmployeeById = (req, res) => {
 }
 
 exports.getEmployeeByName = (req, res) => {
-    let name = req.params.name
-    Employee.find({ "firstName": name }, (err, employee) => {
+    let name = req.query.name
+    Employee.find({ firstName: { $regex: name, $options: "i" } }, (err, employee) => {
         if (!employee) {
             res.status(404).send('Result not found');
         } else {

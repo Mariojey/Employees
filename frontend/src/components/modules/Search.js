@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import {GenIcon} from "react-icons";
 
 export default function Search(){
 
@@ -16,7 +15,13 @@ export default function Search(){
                 {params: {key: key, limit: 5}})
                 .then(res => res.json())
                 .then((data) => {
-                    console.log(data)
+                    const results = data.filter((item) => {
+                        return (
+                          item.firstName && item.firstName.toLowerCase().includes(key)  
+                        )
+                    });
+                    setResult(results)
+                    console.log(results);
                     //setResult(data)
                 })
         }catch(error){
@@ -38,7 +43,6 @@ export default function Search(){
                         onChange={(event) => setKey(event.target.value) }
                     />
                 </div>
-                <button className="searchBtn"><GenIcon /></button>
             </div>
         </form>
     )

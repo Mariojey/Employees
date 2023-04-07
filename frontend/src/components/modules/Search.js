@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import './Search.css'
 
 export default function Search(){
 
@@ -17,7 +19,7 @@ export default function Search(){
                 .then((data) => {
                     const results = data.filter((item) => {
                         return (
-                          item.firstName && item.firstName.toLowerCase().includes(key)  
+                          (item.firstName && item.firstName.toLowerCase().includes(key)) || (item.lastName && item.lastName.toLowerCase().includes(key)) 
                         )
                     });
                     setResult(results)
@@ -42,6 +44,17 @@ export default function Search(){
                         value={key}  
                         onChange={(event) => setKey(event.target.value) }
                     />
+                </div>
+                <div className="searchResult">
+
+                    {
+                        result && result.map((item) => {
+                            return(
+                                <Link to={`/employee/${item._id}`} key={item._id} className="link">{item.firstName} {item.lastName}</Link>
+                            )
+                        })
+
+                    }
                 </div>
             </div>
         </form>

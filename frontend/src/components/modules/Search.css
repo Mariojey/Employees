@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --reactDefaultColor: #282c34;
+}
+
+.searchWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.formGroup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.formControl {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.searchResult {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.link {
+    padding: 5px 10px 5px 10px;
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid varf(--white);
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: var(--reactDefaultColor);
+}

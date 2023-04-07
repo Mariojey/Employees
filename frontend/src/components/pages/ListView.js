@@ -5,8 +5,6 @@ import { useState, useEffect } from "react";
 import { json, useNavigate } from "react-router-dom";
 import './ListView.css'
 import { Link } from "react-router-dom";
-import AsyncSelect from 'react-select/async';
-import Select from 'react-select';
 
 export default function ListView(){
 
@@ -40,41 +38,12 @@ export default function ListView(){
         fetchData()
     },[])
 
-    function handleNameUpdate(event) {
-        setEmployees(event.value)
-    }
-
-    function loadOptions(input, callback) {
-        fetch(`http://127.0.0.1:8888/api/employee/?name=${input}`, {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        }).then(res => res.json())
-        .then((data) => {
-            const results = data.map(item => {
-                return ({
-                  value: item,
-                  label: `${item.firstName} ${item.lastName}`
-                })
-            })
-
-            callback(results)
-        })
-    }
     
     return(
         <>
         <Navbar />
         <div className="listView">
-            <AsyncSelect 
-            
-            placeholder='Wpisz użytkownika . . . '
-            loadOptions={loadOptions}
-            onChange={item => handleNameUpdate(item)}
-            
-            />
+
             <table className="table">
                 <thead>
                     <tr>

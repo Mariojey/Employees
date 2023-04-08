@@ -1,4 +1,5 @@
 import React from "react";
+import './Home.css';
 
 import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
@@ -8,7 +9,11 @@ export default function Home() {
     return(
         <div className="home">
             <Navbar />
-            <Search />
+            <div className="homeContent">
+                <div className="center oversize searchbar">
+                    <Search />
+                </div>
+            </div>
             <Footer />
         </div>
     )

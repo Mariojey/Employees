@@ -1,5 +1,7 @@
 const Employee = require("../models/Employee");
 
+
+// ----- EMPLOYEES --------//
 //Create Employee
 exports.createEmployee = async(req, res, next) => {
     try {

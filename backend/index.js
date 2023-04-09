@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 
 //routes
 const employeeRoute = require('./routes/employeeRoute')
+const userRoute = require('./routes/userRouter')
 
 const app = express();
 const PORT = process.env.PORT || 8888;
@@ -29,6 +30,7 @@ app.use((err, req, res, next) => {
 });
 
 app.use('/api/employee', employeeRoute)
+app.use('/api/user', userRoute)
 
 app.listen(PORT, () => {
     console.log(`======================================`);

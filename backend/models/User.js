@@ -11,6 +11,7 @@ const UserSchema = new mongoose.Schema({
     password: {
         type: String,
         require: [true, 'Password i required'],
+        minLength: 8
     },
     employee_id: {
         type: mongoose.Schema.Types.ObjectId,

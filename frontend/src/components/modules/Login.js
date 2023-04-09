@@ -56,5 +56,42 @@ export default function Login() {
                 console.log(error);
             }
         }
+        checkData()
     }
+    function handleChange(event) {
+        setData({...data, [event.target.name]: event.target.value});
+    }
+
+    return(
+        <div className="loginContainer">
+            <h1>Login</h1>
+            <form className="form" onSubmit={handleSubmit}>
+                    <input 
+                        type="email"
+                        name="email"
+                        required
+                        value={data.email}
+                        placeholder="Write your email here"
+                        className="formInput"
+                        onChange={handleChange}
+                        />
+                    <input 
+                        type="password"
+                        name="password"
+                        required
+                        value={data.password}
+                        placeholder="Write your password here"
+                        className="formInput"
+                        onChange={handleChange}
+                        />
+                    <button 
+                        type="submit" 
+                        className="btnSubmit"
+                        value="Zaloguj"
+                    
+                    ></button>
+            </form>
+            <p>{message}</p>
+        </div>
+    )
 }

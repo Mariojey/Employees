@@ -1,5 +1,7 @@
 const User = require("../models/User")
 
+const tokenHandler = require('../modules/authtoken');
+
 // -------USERS-----------//
 
 exports.getAllUsers = (req, res) => {
@@ -26,10 +28,13 @@ exports.checkUser = (req, res) => {
     let email = req.body.email;
     let password = req.body.password;
     User.find({ email: { $regex: email }, password: { $regex: password } }, (err, user) => {
-        if (!user) {
+        if (user.length == 0) {
             res.status(404).send('User not found');
         } else {
-            res.json(user)
+
+            const token = tokenHandler.generateToken(user.email, user._id, user.permission);
+
+            res.json({ status: 'OK', user: user, token: token })
         }
     })
 

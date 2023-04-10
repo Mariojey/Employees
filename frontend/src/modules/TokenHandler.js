@@ -28,8 +28,7 @@ export function getTokenData() {
 
 export function verifyCredentials() {
     const data = getTokenData();
-
-    return fetch(`https://127.0.0.1:8888/api/auth/verifytoken`, {
+    return fetch(`http://127.0.0.1:8888/api/auth/verifytoken`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

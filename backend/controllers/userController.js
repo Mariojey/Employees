@@ -10,6 +10,17 @@ exports.getAllUsers = (req, res) => {
     });
 };
 
+exports.getUserById = (req, res) => {
+    let id = req.params.id
+    User.findById(id, (err, user) => {
+        if (!user) {
+            res.status(404).send('User not found')
+        } else {
+            res.json(user)
+        }
+    })
+}
+
 exports.createUser = async(req, res, next) => {
     try {
         let user = new User(req.body)
@@ -39,4 +50,14 @@ exports.checkUser = (req, res) => {
         }
     })
 
+}
+
+exports.updateUser = (req, res) => {
+    let data = req.body;
+    let id = req.params.id;
+    User.findByIdAndUpdate(id, data).then((data) => {
+        res.status(200).json(data)
+    }).catch(() => {
+        res.status(404).send('Fail')
+    })
 }

@@ -19,7 +19,7 @@ import Card from './components/pages/CardEmployee';
 import EditCard from './components/modules/EditEmployee';
 import Login from './components/modules/Login';
 import Register from './components/modules/Register';
-
+import ListAccounts from './components/pages/ListAccounts';
 
 function App() {
 
@@ -68,6 +68,8 @@ function App() {
           <Route path="/employee/:_id/edit" element={<EditCard />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/account' element={<ListAccounts />} />
+          <Route path='/account/:_id' element={<ListAccounts />} />
         </Routes>
         ) : (
           <Routes>

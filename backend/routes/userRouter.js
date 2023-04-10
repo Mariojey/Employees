@@ -8,7 +8,11 @@ router.route('/').get(
 ).post(
     userController.createUser
 )
-
+router.route('/:id').get(
+    userController.getUserById
+).patch(
+    userController.updateUser
+)
 router.route('/login').post(
     userController.checkUser
 )

@@ -15,7 +15,8 @@ exports.createUser = async(req, res, next) => {
         let user = new User(req.body)
         await user.save()
             .then((user) => {
-                res.status(200).send(user)
+                const token = tokenHandler.generateToken(user.email, user._id, user.permission)
+                res.status(200).send({ status: 'OK', user: user, token: token })
             })
     } catch (error) {
         console.log(error);
@@ -29,7 +30,7 @@ exports.checkUser = (req, res) => {
     let password = req.body.password;
     User.find({ email: { $regex: email }, password: { $regex: password } }, (err, user) => {
         if (user.length == 0) {
-            res.status(404).send('User not found');
+            res.status(404).json({ message: 'User not found' });
         } else {
 
             const token = tokenHandler.generateToken(user.email, user._id, user.permission);

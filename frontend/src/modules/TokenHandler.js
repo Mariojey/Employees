@@ -26,7 +26,7 @@ export function getTokenData() {
     return { user, token, role }
 }
 
-export function varifyCredentials() {
+export function verifyCredentials() {
     const data = getTokenData();
 
     return fetch(`https://127.0.0.1:8888/api/auth/verifytoken`, {

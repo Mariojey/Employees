@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as tokenHandler from '../../modules/TokenHandler';
 
-export default function Login() {
+export default function Register() {
     const initState = {
         email: "",
-        password: ""
+        password: "",
     };
 
     const [data, setData] = useState(initState);
     const [remember, setRemeber] = useState(true)
     const [message, setMessage] = useState(` `)
+    const [passwordMessage, setPasswordMessge] = useState(``)
 
     const navigate = useNavigate();
 
@@ -23,7 +24,7 @@ export default function Login() {
 
         function checkData() {
             try {
-                fetch(`http://127.0.0.1:8888/api/user/login`, {
+                fetch(`http://127.0.0.1:8888/api/user`, {
                         method: 'POST',
                         headers: {
                             'Accept': 'application/json',
@@ -33,9 +34,9 @@ export default function Login() {
                     }).then(res => res.json())
                     .then(res => {
                         if (res.status == 'OK') {
-                            const user = res.user[0].email;
+                            const user = res.user.email;
                             const token = res.token;
-                            const role = res.user[0].permission;
+                            const role = res.user.permission;
 
                             if (remember) {
                                 tokenHandler.saveTokenData(user, token, role)
@@ -46,10 +47,10 @@ export default function Login() {
                             if (role == 'ADMIN') {
                                 navigate(`/employees`)
                             } else if (role == 'USER') {
-                                navigate(`/employee/${res.user[0]._id}`)
+                                navigate(`/`)
                             }
                         } else {
-                            setMessage(`User not found in database`)
+                            setMessage(`Soething went wrong please check data again!`)
                         }
                     })
             } catch (error) {
@@ -61,10 +62,17 @@ export default function Login() {
     function handleChange(event) {
         setData({...data, [event.target.name]: event.target.value});
     }
+    function isSamePassword(event){
+        if (event.target.value != data.password) {
+            passwordMessage('Password values must be the same!')
+        }else{
+            passwordMessage('')
+        }
+    }
 
     return(
         <div className="loginContainer">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <form className="form" onSubmit={handleSubmit}>
                     <input 
                         type="email"
@@ -84,11 +92,21 @@ export default function Login() {
                         className="formInput"
                         onChange={handleChange}
                         />
+                    <input 
+                        type="password"
+                        name="passwordRepeat"
+                        required
+                        placeholder="Re-write your password here"
+                        className="formInput"
+                        onChange={isSamePassword}
+                        />
+                    <p>{passwordMessage}</p>
                     <button 
                         type="submit" 
                         className="btnSubmit"
-                        onClick={handleSubmit}
-                    >Login</button>
+                        value="Zaloguj"
+                    
+                    ></button>
             </form>
             <p>{message}</p>
         </div>

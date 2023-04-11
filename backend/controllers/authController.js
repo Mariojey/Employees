@@ -2,11 +2,11 @@ const tokenHandler = require('../modules/authtoken')
 
 exports.verifyToken = async(req, res, next) => {
     const data = req.body;
-
+    console.log(data);
     if (tokenHandler.verifyToken(data.token, data.user, data.role)) {
-        res.status(200).json({ status: 'OK', message: `Token valid for user ${data.user}`, role: data.role })
+        res.status(200).send({ status: 'OK', message: `Token valid for user ${data.user}`, role: data.role })
 
+    } else {
+        res.status(400).send({ status: 'NOT FOUND', message: 'Token invalid' })
     }
-
-    res.status(400).json({ status: 'NOT FOUND', message: 'Token invalid' })
 }

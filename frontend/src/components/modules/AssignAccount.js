@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Navbar from "../elements/Navbar";
 import Footer from "../elements/Footer";
@@ -26,7 +26,7 @@ export default function Assign(){
     const {_id} = useParams()
 
     const [user, setUser] = useState(initState)
-    const [employees, setEmployees] = useState()
+    const [employees, setEmployees] = useState(employeeState)
 
     const navigate = useNavigate()
 
@@ -70,7 +70,7 @@ export default function Assign(){
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify(user)
                 }).then(res => res.json())
                 .then(res => {
                     navigate(`/account/${res._id}`);

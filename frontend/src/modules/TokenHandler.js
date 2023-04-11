@@ -26,15 +26,18 @@ export function getTokenData() {
     return { user, token, role }
 }
 
-export function verifyCredentials() {
+export async function verifyCredentials() {
     const data = getTokenData();
-    return fetch(`http://127.0.0.1:8888/api/auth/verifytoken`, {
+    const res = await fetch(`http://127.0.0.1:8888/api/auth/verifytoken`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ user: data.user, token: data.token, role: data.role })
-    }).then(res => res.json())
+    });
+    const data_1 = await res.json();
+    console.log(data_1);
+    return JSON.stringify(data_1);
 
 }

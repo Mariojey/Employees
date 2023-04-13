@@ -1,6 +1,6 @@
 const tokenHandler = require('../modules/authtoken')
 
-exports.verifyToken = async(req, res, next) => {
+exports.verifyToken = (req, res, next) => {
     const data = req.body;
     console.log(data);
     if (tokenHandler.verifyToken(data.token, data.user, data.role)) {

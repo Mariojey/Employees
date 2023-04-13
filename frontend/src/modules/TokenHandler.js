@@ -34,7 +34,7 @@ export async function verifyCredentials() {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ user: data.user, token: data.token, role: data.role })
+        body: JSON.stringify({ user: data.user, token: data.token})
     });
     const data_1 = await res.json();
     console.log(data_1);

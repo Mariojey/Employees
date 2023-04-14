@@ -2,20 +2,19 @@ require('dotenv').config()
 
 const jwt = require('jsonwebtoken');
 
-function generateToken(user, id) {
-    return jwt.sign({ id, user }, 'shhhhh');
+function generateToken(user, id, role) {
+    return jwt.sign({ id, user, role }, 'shhhhh');
 }
 
 function decodeToken(token) {
-    console.log(jwt.decode(token, 'shhhhh'));
     return jwt.decode(token, 'shhhhh');
 }
 
-function verifyToken(token, user) {
+function verifyToken(token, user, role) {
     try {
         const decodedToken = decodeToken(token)
 
-        return decodedToken;
+        return decodedToken.user === user;
     } catch {
         return false;
     }

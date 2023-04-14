@@ -30,31 +30,32 @@ export default function Assign(){
 
     const navigate = useNavigate()
 
+    function fetchUser(){
+        fetch(`http://127.0.0.1:8888/api/user/${_id}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }).then(res => res.json())
+        .then(data => {
+            setUser(data)
+        })
+    }
+    function fetchEmployees(){
+        fetch(`http://127.0.0.1:8888/api/employee`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }).then(res => res.json())
+        .then(data => {
+            setEmployees(data)
+        })
+    }
+
     useEffect(() => {
-        function fetchUser(){
-            fetch(`http://127.0.0.1:8888/api/user/${_id}`, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            }).then(res => res.json())
-            .then(data => {
-                setUser(data)
-            })
-        }
-        function fetchEmployees(){
-            fetch(`http://127.0.0.1:8888/api/employee`, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            }).then(res => res.json())
-            .then(data => {
-                setEmployees(data)
-            })
-        }
         fetchUser()
         fetchEmployees()
     },[])
@@ -90,7 +91,6 @@ export default function Assign(){
         navigate(`/account/${_id}`);
     }
 
-
     return(
         <>
             <Navbar />
@@ -112,9 +112,9 @@ export default function Assign(){
 
                     </select>
                     <select name="employee_id" id="employee_id" onChange={handleChange}>
-                        { employees && employees.map(item => {
+                        { employees && employees.map((item) => {
                             return(
-                                <option value={item._id}>{item.firstName} {item.lastName}</option>
+                                <option value={item._id} key={item._id}>{item.firstName} {item.lastName}</option>
                             )
                         })}
                     </select>

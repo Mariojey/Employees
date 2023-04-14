@@ -21,9 +21,9 @@ export default function Login() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        function checkData() {
+        async function checkData() {
             try {
-                fetch(`http://127.0.0.1:8888/api/user/login`, {
+                await fetch(`http://127.0.0.1:8888/api/user/login`, {
                         method: 'POST',
                         headers: {
                             'Accept': 'application/json',
@@ -32,7 +32,7 @@ export default function Login() {
                         body: JSON.stringify(data)
                     }).then(res => res.json())
                     .then(res => {
-                        if (res.status == 'OK') {
+                        if (res.status === 'OK') {
                             const user = res.user[0].email;
                             const token = res.token;
                             const role = res.user[0].permission;

@@ -21,6 +21,12 @@ export default function Navbar(){
                                     Create Employee
                         </NavLink>
                     </li>
+                    <li>
+                    <NavLink className="navLink"
+                                to="/account">
+                                    Accounts
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

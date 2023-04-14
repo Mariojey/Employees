@@ -43,8 +43,7 @@ exports.checkUser = (req, res) => {
         if (user.length == 0) {
             res.status(404).json({ message: 'User not found' });
         } else {
-
-            const token = tokenHandler.generateToken(user.email, user._id, user.permission);
+            const token = tokenHandler.generateToken(user[0].email, user[0]._id, user[0].permission);
 
             res.json({ status: 'OK', user: user, token: token })
         }

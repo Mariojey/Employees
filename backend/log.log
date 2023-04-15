@@ -1,0 +1,170 @@
+{"level":"error","message":"error"}
+{"level":"warn","message":"warn"}
+{"level":"info","message":"info"}
+{"level":"verbose","message":"verbose"}
+{"level":"debug","message":"debug"}
+{"level":"info","message":"======================================"}
+{"level":"info","message":"||       E M P L O Y E E S          ||"}
+{"level":"info","message":"||🦫 Server running on PORT 8888    ||"}
+{"level":"info","message":"||       Made by MarioJey           ||"}
+{"level":"info","message":"====================================="}
+{"level":"error","message":"error"}
+{"level":"warn","message":"warn"}
+{"level":"info","message":"info"}
+{"level":"info","message":"======================================"}
+{"level":"info","message":"||       E M P L O Y E E S          ||"}
+{"level":"info","message":"||🦫 Server running on PORT 8888    ||"}
+{"level":"info","message":"||       Made by MarioJey           ||"}
+{"level":"info","message":"====================================="}
+error - error
+warn - warn
+info - info
+info - ======================================
+info - ||       E M P L O Y E E S          ||
+info - ||🦫 Server running on PORT 8888    ||
+info - ||       Made by MarioJey           ||
+info - =====================================
+]error] - error
+]warn] - warn
+]info] - info
+]info] - ======================================
+]info] - ||       E M P L O Y E E S          ||
+]info] - ||🦫 Server running on PORT 8888    ||
+]info] - ||       Made by MarioJey           ||
+]info] - =====================================
+]error  ] - error
+]warn   ] - warn
+]info   ] - info
+]info   ] - ======================================
+]info   ] - ||       E M P L O Y E E S          ||
+]info   ] - ||🦫 Server running on PORT 8888    ||
+]info   ] - ||       Made by MarioJey           ||
+]info   ] - =====================================
+]ERROR  ] - error
+]WARN   ] - warn
+]INFO   ] - info
+]INFO   ] - ======================================
+]INFO   ] - ||       E M P L O Y E E S          ||
+]INFO   ] - ||🦫 Server running on PORT 8888    ||
+]INFO   ] - ||       Made by MarioJey           ||
+]INFO   ] - =====================================
+]ERROR] - error
+]WARN ] - warn
+]INFO ] - info
+]INFO ] - ======================================
+]INFO ] - ||       E M P L O Y E E S          ||
+]INFO ] - ||🦫 Server running on PORT 8888    ||
+]INFO ] - ||       Made by MarioJey           ||
+]INFO ] - =====================================
+[ERROR] - error
+[WARN ] - warn
+[INFO ] - info
+[INFO ] - ======================================
+[INFO ] - ||       E M P L O Y E E S          ||
+[INFO ] - ||🦫 Server running on PORT 8888    ||
+[INFO ] - ||       Made by MarioJey           ||
+[INFO ] - =====================================
+ 2023-04-15T10:10:23.772Z : [ERROR] - error
+ 2023-04-15T10:10:23.775Z : [WARN ] - warn
+ 2023-04-15T10:10:23.776Z : [INFO ] - info
+ 2023-04-15T10:10:23.787Z : [INFO ] - ======================================
+ 2023-04-15T10:10:23.788Z : [INFO ] - ||       E M P L O Y E E S          ||
+ 2023-04-15T10:10:23.788Z : [INFO ] - ||🦫 Server running on PORT 8888    ||
+ 2023-04-15T10:10:23.788Z : [INFO ] - ||       Made by MarioJey           ||
+ 2023-04-15T10:10:23.789Z : [INFO ] - =====================================
+ 2023-04-15T10:10:27.590Z : [ERROR] - error
+ 2023-04-15T10:10:27.592Z : [WARN ] - warn
+ 2023-04-15T10:10:27.593Z : [INFO ] - info
+ 2023-04-15T10:10:27.604Z : [INFO ] - ======================================
+ 2023-04-15T10:10:27.604Z : [INFO ] - ||       E M P L O Y E E S          ||
+ 2023-04-15T10:10:27.605Z : [INFO ] - ||🦫 Server running on PORT 8888    ||
+ 2023-04-15T10:10:27.606Z : [INFO ] - ||       Made by MarioJey           ||
+ 2023-04-15T10:10:27.606Z : [INFO ] - =====================================
+ 2023-04-15T10:12:26.789Z : [ERROR] - error
+ 2023-04-15T10:12:26.792Z : [WARN ] - warn
+ 2023-04-15T10:12:26.792Z : [INFO ] - info
+ 2023-04-15T10:12:26.804Z : [INFO ] - ======================================
+ 2023-04-15T10:12:26.804Z : [INFO ] - ||       E M P L O Y E E S          ||
+ 2023-04-15T10:12:26.805Z : [INFO ] - ||🦫 Server running on PORT 8888    ||
+ 2023-04-15T10:12:26.805Z : [INFO ] - ||       Made by MarioJey           ||
+ 2023-04-15T10:12:26.806Z : [INFO ] - =====================================
+ 2023-04-15T10:12:48.041Z : [ERROR] - error
+ 2023-04-15T10:12:48.043Z : [WARN ] - warn
+ 2023-04-15T10:12:48.044Z : [INFO ] - info
+ 2023-04-15T10:12:48.059Z : [INFO ] - ======================================
+ 2023-04-15T10:12:48.059Z : [INFO ] - ||       E M P L O Y E E S          ||
+ 2023-04-15T10:12:48.060Z : [INFO ] - ||🦫 Server running on PORT 8888    ||
+ 2023-04-15T10:12:48.061Z : [INFO ] - ||       Made by MarioJey           ||
+ 2023-04-15T10:12:48.061Z : [INFO ] - =====================================
+ 2023-04-15T10:12:56.272Z : [ERROR] - error
+ 2023-04-15T10:12:56.275Z : [WARN ] - warn
+ 2023-04-15T10:12:56.276Z : [INFO ] - info
+ 2023-04-15T10:12:56.286Z : [INFO ] - ======================================
+ 2023-04-15T10:12:56.287Z : [INFO ] - ||       E M P L O Y E E S          ||
+ 2023-04-15T10:12:56.287Z : [INFO ] - ||🦫 Server running on PORT 8888    ||
+ 2023-04-15T10:12:56.287Z : [INFO ] - ||       Made by MarioJey           ||
+ 2023-04-15T10:12:56.288Z : [INFO ] - =====================================
+ 2023-04-15T10:13:31.097Z : [ERROR] - error
+ 2023-04-15T10:13:31.100Z : [WARN ] - warn
+ 2023-04-15T10:13:31.100Z : [INFO ] - info
+ 2023-04-15T10:13:31.111Z : [INFO ] - App is running
+ 2023-04-15T10:14:10.381Z : [ERROR] - error
+ 2023-04-15T10:14:10.385Z : [WARN ] - warn
+ 2023-04-15T10:14:10.389Z : [INFO ] - info
+ 2023-04-15T10:14:10.456Z : [INFO ] - App is running
+ 2023-04-15T10:15:00.344Z : [ERROR] - error
+ 2023-04-15T10:15:00.347Z : [WARN ] - warn
+ 2023-04-15T10:15:00.348Z : [INFO ] - info
+ 2023-04-15T10:15:00.358Z : [INFO ] - App is running
+ 2023-04-15T10:18:08.466Z : [ERROR] - error
+ 2023-04-15T10:18:08.483Z : [WARN ] - warn
+ 2023-04-15T10:18:08.488Z : [INFO ] - info
+ 2023-04-15T10:18:08.524Z : [INFO ] - App is running
+ 2023-04-15T10:18:24.311Z : [ERROR] - error
+ 2023-04-15T10:18:24.334Z : [WARN ] - warn
+ 2023-04-15T10:18:24.339Z : [INFO ] - info
+ 2023-04-15T10:18:24.420Z : [INFO ] - App is running
+ 2023-04-15T10:18:28.522Z : [ERROR] - error
+ 2023-04-15T10:18:28.526Z : [WARN ] - warn
+ 2023-04-15T10:18:28.526Z : [INFO ] - info
+ 2023-04-15T10:18:28.539Z : [INFO ] - App is running
+ 2023-04-15T10:18:51.538Z : [INFO ] - App has got list of all users from database
+ 2023-04-15T10:22:16.009Z : [ERROR] - error
+ 2023-04-15T10:22:16.012Z : [WARN ] - warn
+ 2023-04-15T10:22:16.013Z : [INFO ] - info
+ 2023-04-15T10:22:16.026Z : [INFO ] - App is running
+ 2023-04-15T10:23:49.342Z : [ERROR] - error
+ 2023-04-15T10:23:49.346Z : [WARN ] - warn
+ 2023-04-15T10:23:49.346Z : [INFO ] - info
+ 2023-04-15T10:23:49.355Z : [INFO ] - App is running
+ 2023-04-15T10:24:34.129Z : [INFO ] - Program has created element in database
+ 2023-04-15T10:24:51.433Z : [INFO ] - Program has received user data from database
+ 2023-04-15T10:27:27.333Z : [ERROR] - error
+ 2023-04-15T10:27:27.341Z : [WARN ] - warn
+ 2023-04-15T10:27:27.342Z : [INFO ] - info
+ 2023-04-15T10:27:27.355Z : [INFO ] - App is running
+ 2023-04-15T10:27:59.732Z : [ERROR] - error
+ 2023-04-15T10:27:59.737Z : [WARN ] - warn
+ 2023-04-15T10:27:59.738Z : [INFO ] - info
+ 2023-04-15T10:27:59.750Z : [INFO ] - App is running
+ 2023-04-15T10:28:03.579Z : [INFO ] - Program has got this error MongoServerError: E11000 duplicate key error collection: Employers.employees index: email_1 dup key: { email: "szymonkondel3bip@gmail.com" }
+ 2023-04-15T10:28:19.446Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-15T10:28:36.313Z : [INFO ] - Program has received list of all users from database
+ 2023-04-15T10:28:52.237Z : [ERROR] - error
+ 2023-04-15T10:28:52.241Z : [WARN ] - warn
+ 2023-04-15T10:28:52.241Z : [INFO ] - info
+ 2023-04-15T10:28:52.252Z : [INFO ] - App is running
+ 2023-04-15T10:30:01.225Z : [ERROR] - error
+ 2023-04-15T10:30:01.232Z : [WARN ] - warn
+ 2023-04-15T10:30:01.234Z : [INFO ] - info
+ 2023-04-15T10:30:01.258Z : [INFO ] - App is running
+ 2023-04-15T10:32:29.502Z : [INFO ] - Program has received list of all users from database
+ 2023-04-15T10:32:41.349Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-15T10:32:48.054Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-15T10:32:48.591Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-15T10:33:16.384Z : [INFO ] - Program has received user data from database
+ 2023-04-15T10:36:03.317Z : [ERROR] - error
+ 2023-04-15T10:36:03.320Z : [WARN ] - warn
+ 2023-04-15T10:36:03.321Z : [INFO ] - info
+ 2023-04-15T10:36:03.331Z : [INFO ] - App is running
+ 2023-04-15T10:36:24.582Z : [INFO ] - App is running

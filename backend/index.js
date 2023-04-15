@@ -3,11 +3,13 @@ const express = require("express");
 const cors = require("cors");
 const connection = require('./config/db');
 const bodyParser = require("body-parser");
+const logger = require('./logger')
 
 //routes
 const employeeRoute = require('./routes/employeeRoute')
 const userRoute = require('./routes/userRouter')
-const authRouter = require('./routes/authRouter')
+const authRouter = require('./routes/authRouter');
+
 
 const app = express();
 const PORT = process.env.PORT || 8888;
@@ -33,11 +35,15 @@ app.use((err, req, res, next) => {
 app.use('/api/employee', employeeRoute)
 app.use('/api/user', userRoute)
 app.use('/api/auth', authRouter)
-
+    // 
+    // logger.error("error")
+    // logger.warn("warn")
+    // logger.info("info")
+    // logger.verbose("verbose")
+    // logger.debug("debug")
+    // logger.silly("silly")
+    // 
 app.listen(PORT, () => {
-    console.log(`======================================`);
-    console.log(`||       E M P L O Y E E S          ||`);
-    console.log(`||🦫 Server running on PORT ${PORT}     ||`);
-    console.log(`||       Made by MarioJey           ||`);
-    console.log(`=====================================`);
+    logger.info(`App is running`)
+
 })

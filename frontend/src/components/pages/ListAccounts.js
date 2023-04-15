@@ -8,7 +8,7 @@ import Footer from "../elements/Footer";
 export default function ListAccounts() {
     const initState = {
         email: "",
-        role: ""
+        permission: ""
     };
 
     const [accounts, setAccounts] = useState([])
@@ -46,7 +46,7 @@ export default function ListAccounts() {
                             return(
                                 <tr key={item._id}>
                                     <td><Link to={`/account/${item._id}`} className="tableLink">{item.email}</Link></td>
-                                    <td><Link to={`/account/${item._id}`} className="tableLink">{item.role}</Link></td>
+                                    <td><Link to={`/account/${item._id}`} className="tableLink">{item.permission}</Link></td>
                                 </tr>
                             )
                         })}

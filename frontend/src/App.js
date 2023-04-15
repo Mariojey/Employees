@@ -20,8 +20,8 @@ import EditCard from './components/modules/EditEmployee';
 import Login from './components/modules/Login';
 import Register from './components/modules/Register';
 import ListAccounts from './components/pages/ListAccounts';
-import Assign from './components/modules/AssignAccount';
 import Account from './components/pages/Account';
+import EditAccount from './components/modules/EditAccount';
 
 function App() {
 
@@ -71,7 +71,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/account' element={<ListAccounts />} />
-          <Route path='/account/:_id' element={<Assign />} />
+          <Route path='/account/:_id' element={<EditAccount />} />
         </Routes>
         ) : (
           <Routes>
@@ -80,7 +80,7 @@ function App() {
           <Route path="/employee/:_id" element={<Card />}/>
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/myaccount/:_id' element={<ListAccounts />} />
+          <Route path='/myaccount/:_id' element={<Account />} />
         </Routes>
         )
 

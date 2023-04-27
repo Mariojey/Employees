@@ -13,12 +13,18 @@
 }
 
 .addBackground {
-    background-color: var(--reactDefaultColor);
+    background-color: var(--white);
     width: 100%;
     min-height: 80vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .addEmployeeContainer {
+    width: 60%;
+    height: auto;
     background-color: var(--black);
     color: var(--beige);
     display: flex;
@@ -26,9 +32,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .addEmployeeContainer h1 {
+    margin-top: 20px;
     width: 40vw;
 }
 

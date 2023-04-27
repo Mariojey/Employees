@@ -11,20 +11,39 @@
 
 .listView {
     max-width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .table {
-    width: 100%;
-    min-height: 100vh;
+    width: 90%;
+    height: auto;
     background-color: var(--black);
     color: var(--white);
+    margin-top: 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 3px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .table tr {
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid white;
+}
+
+.table th {
+    padding: 20px;
+}
+
+.table td {
+    padding: 17px;
 }
 
 .tableLink {
     text-decoration: none;
     color: var(--white);
+    padding: 17px;
 }

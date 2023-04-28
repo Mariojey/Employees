@@ -76,65 +76,68 @@ export default function EditCard(){
 
     return(
         <>
-                    <Navbar />
-        <div className="addEmployeeContainer">
-            <h1>Edit Employee</h1>
-            <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
-                <input type="text"
-                        name="firstName"
-                        required
-                        value={data.firstName}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write firstName here..." />
-                <input type="text"
-                        name="lastName"
-                        required
-                        value={data.lastName}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write lastName here..." />
-                <input type="text"
-                        name="title"
-                        required
-                        value={data.title}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write title here..." />
-                <input type="email"
-                        name="email"
-                        required
-                        value={data.email}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write email here..." />
-                <input type="number"
-                        name="salary"
-                        value={data.salary}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write salary here..." />
-                <input type="tel"
-                        name="phone"
-                        pattern="(48)-[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                        required
-                        value={data.phone}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write phonenumber here..." />
-                        <small>Format: +48-XXX-XXX-XXX</small>
-                <input type="text"
-                        name="department"
-                        value={data.department}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write department here..." />
-                <div className="addEmployeeBtns">
-                    <button type="submit" onClick={handleSubmit} className="addBtn">Edit</button>
-                    <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
-                </div>
-            </form>
-        </div>
+        <Navbar />
+            <div className="editBackground">
+                <div className="addEmployeeContainer">
+                <h1>Edit Employee</h1>
+                <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
+                    <input type="text"
+                            name="firstName"
+                            required
+                            value={data.firstName}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write firstName here..." />
+                    <input type="text"
+                            name="lastName"
+                            required
+                            value={data.lastName}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write lastName here..." />
+                    <input type="text"
+                            name="title"
+                            required
+                            value={data.title}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write title here..." />
+                    <input type="email"
+                            name="email"
+                            required
+                            value={data.email}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write email here..." />
+                    <input type="number"
+                            name="salary"
+                            value={data.salary}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write salary here..." />
+                    <input type="tel"
+                            name="phone"
+                            pattern="(48)-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            required
+                            value={data.phone}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write phonenumber here..." />
+                            <small>Format: +48-XXX-XXX-XXX</small>
+                    <input type="text"
+                            name="department"
+                            value={data.department}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write department here..." />
+                    <div className="addEmployeeBtns">
+                        <button type="submit" onClick={handleSubmit} className="addBtn">Edit</button>
+                        <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+    
         <Footer />
         </>
     )

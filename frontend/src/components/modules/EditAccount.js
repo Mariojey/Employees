@@ -7,6 +7,8 @@ import Assign from "./AssignAccount";
 
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 
+import './Add.employee.css'
+
 export default function EditAccount(){
     
     const initState = {
@@ -76,32 +78,34 @@ export default function EditAccount(){
     return(
         <>
             <Navbar />
+            <div className="editBackground">
+                <div className="addEmployeeContainer">
+                <h1>Edit Employee</h1>
+                <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
+                    <input type="text"
+                            name="firstName"
+                            required
+                            value={user.email}
+                            onChange={handleChange}
+                            className="formInput"
+                            placeholder="Write firstName here..." />
+                        <select name="role" id="role" onChange={handleChange}>
 
-            <div className="addEmployeeContainer">
-            <h1>Edit Employee</h1>
-            <form onSubmit={handleSubmit} className="addEmployeeContainerForm">
-                <input type="text"
-                        name="firstName"
-                        required
-                        value={user.email}
-                        onChange={handleChange}
-                        className="formInput"
-                        placeholder="Write firstName here..." />
-                    <select name="role" id="role" onChange={handleChange}>
+                            <option value="USER">USER</option>
+                            <option value="ADMIN">ADMIN</option>
 
-                        <option value="USER">USER</option>
-                        <option value="ADMIN">ADMIN</option>
-
-                    </select>
-                    <select name="employee_id" id="employee_id" onChange={handleChange}>
-                        <Assign />
-                    </select>
-                <div className="addEmployeeBtns">
-                    <button type="submit" onClick={handleSubmit} className="addBtn">Edit</button>
-                    <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
+                        </select>
+                        <select name="employee_id" id="employee_id" onChange={handleChange}>
+                            <Assign />
+                        </select>
+                    <div className="addEmployeeBtns">
+                        <button type="submit" onClick={handleSubmit} className="addBtn">Edit</button>
+                        <button type="button" onClick={handleCancel} className="cancelBtn">Cancel</button>
+                    </div>
+                </form>
                 </div>
-            </form>
             </div>
+           
 
             <Footer />
         </>

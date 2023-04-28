@@ -203,3 +203,81 @@ info - =====================================
  2023-04-27T13:59:42.122Z : [INFO ] - Programm has valided token
  2023-04-27T13:59:42.291Z : [INFO ] - Program has received list of all employees from database
  2023-04-27T13:59:42.332Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-27T14:02:52.080Z : [INFO ] - Program has received list of all users from database
+ 2023-04-27T14:02:52.093Z : [INFO ] - Program has received list of all users from database
+ 2023-04-27T14:03:00.267Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-27T14:03:00.311Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:26:03.992Z : [INFO ] - App is running
+ 2023-04-28T14:26:25.084Z : [INFO ] - Programm has valided token
+ 2023-04-28T14:26:25.104Z : [INFO ] - Programm has valided token
+ 2023-04-28T14:26:25.371Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:26:25.398Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:27:08.738Z : [INFO ] - Program has created element in database
+ 2023-04-28T14:27:08.867Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:27:08.950Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:27:13.212Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:27:13.303Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:27:25.434Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:27:25.445Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:41:08.011Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:44:50.020Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:45:25.016Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:51:56.009Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:55:29.656Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:55:29.764Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:56:52.599Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:56:52.620Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T14:56:55.299Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:56:55.311Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:56:57.461Z : [INFO ] - Program has received user data from database
+ 2023-04-28T14:56:57.473Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:01:29.731Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:01:29.738Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:01:30.016Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:01:30.046Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:01:32.140Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:01:32.221Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:01:33.415Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:01:33.497Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:02:52.021Z : [INFO ] - Program has received user data from database
+ 2023-04-28T15:02:57.524Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:02:57.638Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:51:09.784Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:51:09.793Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:51:10.021Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:51:10.036Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:51:39.676Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:51:39.691Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:51:40.009Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:51:40.103Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:52:14.970Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:52:14.983Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:52:15.179Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:52:15.274Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:52:42.573Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:52:42.580Z : [INFO ] - Programm has valided token
+ 2023-04-28T15:52:42.872Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:52:42.888Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T15:57:54.195Z : [WARN ] - Programm has not valided token
+ 2023-04-28T15:57:54.201Z : [WARN ] - Programm has not valided token
+ 2023-04-28T15:59:01.071Z : [WARN ] - Programm has not valided token
+ 2023-04-28T15:59:01.083Z : [WARN ] - Programm has not valided token
+ 2023-04-28T16:00:27.972Z : [WARN ] - Programm has not valided token
+ 2023-04-28T16:00:27.977Z : [WARN ] - Programm has not valided token
+ 2023-04-28T16:01:24.764Z : [WARN ] - Programm has not valided token
+ 2023-04-28T16:01:24.769Z : [WARN ] - Programm has not valided token
+ 2023-04-28T16:22:27.207Z : [INFO ] - Program has not found user in database
+ 2023-04-28T16:22:39.281Z : [INFO ] - Program has checked user
+ 2023-04-28T16:22:42.731Z : [INFO ] - Program has checked user
+ 2023-04-28T16:22:46.473Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:22:46.476Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:22:46.649Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T16:22:46.748Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T16:23:21.503Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:23:21.509Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:23:21.811Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T16:23:21.837Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T16:23:25.737Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:23:25.745Z : [INFO ] - Programm has valided token
+ 2023-04-28T16:23:26.009Z : [INFO ] - Program has received list of all employees from database
+ 2023-04-28T16:23:26.036Z : [INFO ] - Program has received list of all employees from database

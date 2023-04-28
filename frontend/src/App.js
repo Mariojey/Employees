@@ -38,7 +38,7 @@ function App() {
           setLogged(true)
           setRoleAdmin(true)
           console.log(data);
-          navigate('/employees')
+          navigate('/')
         }else if(data.role === 'USER'){
           setLogged(true)
           setRoleAdmin(false)
@@ -89,6 +89,10 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path="/employees" element={<Login/>}/>
+          <Route path="/employees/new" element={<Login />} />
+          <Route path="/employee/:_id" element={<Login />}/>
+          <Route path="/employee/:_id/edit" element={<Login />} />
         </Routes>
 
       )}

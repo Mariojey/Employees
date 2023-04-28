@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as tokenHandler from '../../modules/TokenHandler';
 
+
+import './Panel.css'
 export default function Register() {
     const initState = {
         email: "",
@@ -71,44 +73,47 @@ export default function Register() {
     }
 
     return(
-        <div className="loginContainer">
-            <h1>Register</h1>
-            <form className="form" onSubmit={handleSubmit}>
-                    <input 
-                        type="email"
-                        name="email"
-                        required
-                        value={data.email}
-                        placeholder="Write your email here"
-                        className="formInput"
-                        onChange={handleChange}
-                        />
-                    <input 
-                        type="password"
-                        name="password"
-                        required
-                        value={data.password}
-                        placeholder="Write your password here"
-                        className="formInput"
-                        onChange={handleChange}
-                        />
-                    <input 
-                        type="password"
-                        name="passwordRepeat"
-                        required
-                        placeholder="Re-write your password here"
-                        className="formInput"
-                        onChange={isSamePassword}
-                        />
-                    <p>{passwordMessage}</p>
-                    <button 
-                        type="submit" 
-                        className="btnSubmit"
-                        value="Zaloguj"
-                    
-                    ></button>
-            </form>
-            <p>{message}</p>
+        <div className="background">
+            <div className="loginContainer">
+                <h1>Register</h1>
+                <form className="form" onSubmit={handleSubmit}>
+                        <input 
+                            type="email"
+                            name="email"
+                            required
+                            value={data.email}
+                            placeholder="Write your email here"
+                            className="formInput"
+                            onChange={handleChange}
+                            />
+                        <input 
+                            type="password"
+                            name="password"
+                            required
+                            value={data.password}
+                            placeholder="Write your password here"
+                            className="formInput"
+                            onChange={handleChange}
+                            />
+                        <input 
+                            type="password"
+                            name="passwordRepeat"
+                            required
+                            placeholder="Re-write your password here"
+                            className="formInput"
+                            onChange={isSamePassword}
+                            />
+                        <p>{passwordMessage}</p>
+                        <button 
+                            type="submit" 
+                            className="btnSubmit"
+                            value="Zaloguj"
+
+                        ></button>
+                </form>
+                <p>{message}</p>
+           </div>
         </div>
+        
     )
 }

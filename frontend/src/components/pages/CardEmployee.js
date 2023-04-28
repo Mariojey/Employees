@@ -8,6 +8,8 @@ import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
+import "./Card.css"
+
 export default function Card(){
 
     const initState = {
@@ -46,16 +48,19 @@ export default function Card(){
     return(
         <>
             <Navbar />
-            <div className="card">
-                <h1>{data.firstName} {data.lastName}</h1>
-                <p>{data.email}</p>
-                <p>{data.phone}</p>
-                <p>{data.salary}</p>
-                <p>{data.title}</p>
-                <p>{data.department}</p>               
-            </div>
-            <button type="button" onClick={changeURL}>Edit</button>
 
+            <div className="cardContainer">
+                <div className="card">
+                    <h1>{data.firstName} {data.lastName}</h1>
+                    <p>{data.email}</p>
+                    <p>{data.phone}</p>
+                    <p>{data.salary}</p>
+                    <p>{data.title}</p>
+                    <p>{data.department}</p> 
+                    <button type="button" onClick={changeURL} className="btn">Edit</button>              
+                </div>
+            </div>
+            
             <Footer />
         </>
     )

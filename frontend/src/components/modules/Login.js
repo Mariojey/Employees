@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as tokenHandler from '../../modules/TokenHandler';
 
+
+import './Panel.css';
+
 export default function Login() {
     const initState = {
         email: "",
@@ -63,34 +66,37 @@ export default function Login() {
     }
 
     return(
-        <div className="loginContainer">
-            <h1>Login</h1>
-            <form className="form" onSubmit={handleSubmit}>
-                    <input 
-                        type="email"
-                        name="email"
-                        required
-                        value={data.email}
-                        placeholder="Write your email here"
-                        className="formInput"
-                        onChange={handleChange}
-                        />
-                    <input 
-                        type="password"
-                        name="password"
-                        required
-                        value={data.password}
-                        placeholder="Write your password here"
-                        className="formInput"
-                        onChange={handleChange}
-                        />
-                    <button 
-                        type="submit" 
-                        className="btnSubmit"
-                        onClick={handleSubmit}
-                    >Login</button>
-            </form>
-            <p>{message}</p>
+        <div className="background">
+                <div className="loginContainer">
+                <h1>Login</h1>
+                <form className="form" onSubmit={handleSubmit}>
+                        <input 
+                            type="email"
+                            name="email"
+                            required
+                            value={data.email}
+                            placeholder="Write your email here"
+                            className="formInput"
+                            onChange={handleChange}
+                            />
+                        <input 
+                            type="password"
+                            name="password"
+                            required
+                            value={data.password}
+                            placeholder="Write your password here"
+                            className="formInput"
+                            onChange={handleChange}
+                            />
+                        <button 
+                            type="submit" 
+                            className="btnSubmit"
+                            onClick={handleSubmit}
+                        >Login</button>
+                </form>
+                <p>{message}</p>
+            </div>
         </div>
+        
     )
 }

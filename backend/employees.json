@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "644bd7bc058dce49b9b8d655"
+  },
+  "firstName": "igor",
+  "lastName": "laz",
+  "title": "designer",
+  "email": "ilaz@dev.com",
+  "salary": 4000,
+  "phone": "454365456",
+  "department": "it",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644cda7cee2c178c1a496887"
+  },
+  "firstName": "adam",
+  "lastName": "nowak",
+  "title": "Web Developer",
+  "email": "adamnowak@dev.com",
+  "salary": 7000,
+  "phone": "234567890",
+  "department": "it",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644cdaddee2c178c1a49688d"
+  },
+  "firstName": "justyna",
+  "lastName": "kowalska",
+  "title": "C# Developer",
+  "email": "justynanowak@dev.com",
+  "salary": 7800,
+  "phone": "111243543",
+  "department": "it",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644cdfd5ee2c178c1a4968ce"
+  },
+  "firstName": "john",
+  "lastName": "smith",
+  "title": "Developer",
+  "email": "johnsmith@dev.com",
+  "salary": 3400,
+  "phone": "123456780",
+  "department": "it",
+  "__v": 0
+}]

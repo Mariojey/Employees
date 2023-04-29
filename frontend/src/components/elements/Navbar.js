@@ -11,6 +11,12 @@ export default function Navbar(){
                 <ul className="navList">
                     <li className="navItem">
                         <NavLink className="navLink"
+                                to="/home">
+                                    Find
+                        </NavLink>
+                    </li>
+                    <li className="navItem">
+                        <NavLink className="navLink"
                                 to="/employees">
                                     All Employees
                         </NavLink>

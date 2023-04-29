@@ -64,6 +64,7 @@ function App() {
           <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/api" />
+          <Route path="/home" element={<Home />}/>
           <Route path="/employees" element={<ListView/>}/>
           <Route path="/employees/new" element={<Add />} />
           <Route path="/employee/:_id" element={<Card />}/>
@@ -72,10 +73,11 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/account' element={<ListAccounts />} />
           <Route path='/account/:_id' element={<EditAccount />} />
+          <Route path='/myaccount/:_id' element={<Account />} />
         </Routes>
         ) : (
           <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Card />} />
           <Route path="/api" />
           <Route path="/employee/:_id" element={<Card />}/>
           <Route path='/login' element={<Login />} />

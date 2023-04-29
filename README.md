@@ -18,6 +18,7 @@ Next you must create ```.env``` file in bckend directory. File should look like 
 ```cmd
 MONGODB_URI = mongodb://127.0.0.1:27017/<Name_Your_Schema>
 PORT = <Port which app listen on running>
+JWT_SECRET = <Random key for authorization>
 ```
 Finally, you can start backed with command:
 ```
